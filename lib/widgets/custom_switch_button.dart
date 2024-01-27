@@ -35,7 +35,7 @@ class _CustomSwitchButtonState extends State<CustomSwitchButton> {
             child: InkWell(
               onTap: () {
                 setState(() => selectedScreenIndex = 0);
-                widget.onSelect('employer');
+                widget.onSelect('deliver');
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -49,10 +49,11 @@ class _CustomSwitchButtonState extends State<CustomSwitchButton> {
                 height: 40,
                 alignment: Alignment.center,
                 child: Text(
-                  'Employer',
+                  'Deliver',
                   style: TextStyle(
-                    color:
-                        selectedScreenIndex == 0 ? Colors.white : Colors.grey,
+                    color: selectedScreenIndex == 0
+                        ? AppColors.secondryColor
+                        : AppColors.textBlack,
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
                   ),
@@ -65,7 +66,7 @@ class _CustomSwitchButtonState extends State<CustomSwitchButton> {
             child: InkWell(
               onTap: () {
                 setState(() => selectedScreenIndex = 1);
-                widget.onSelect('employ');
+                widget.onSelect('pickup');
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -79,10 +80,11 @@ class _CustomSwitchButtonState extends State<CustomSwitchButton> {
                 height: 40,
                 alignment: Alignment.center,
                 child: Text(
-                  'Employee',
+                  'Pick Up',
                   style: TextStyle(
-                    color:
-                        selectedScreenIndex == 0 ? Colors.grey : Colors.white,
+                    color: selectedScreenIndex == 0
+                        ? AppColors.textBlack
+                        : AppColors.secondryColor,
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
                   ),

@@ -1,7 +1,8 @@
 import 'package:coffe_shop_app/config/app_colors.dart';
-import 'package:coffe_shop_app/screens/delivery_screen.dart/delivery_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'screens/delivery_screen/delivery_screen.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
